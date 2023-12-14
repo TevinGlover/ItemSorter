@@ -7,20 +7,22 @@ public class Item {
 long id;
 String name;
 Double price;
-    public Item() {
+    public Item(){
     }
 
-    public Item(Long id, String name, Double price) {
+    public Item(Long id, String name, Double price) { // constructor
+        //method statement
         this.id = id;
         this.name = name;
         this.price = price;
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
+        this.name = "";
     }
 
     public Long getId() {
@@ -28,6 +30,7 @@ Double price;
     }
 
     public void setId(Long id) {
+        id = 0L;
     }
 
     public Double getPrice() {
@@ -35,5 +38,6 @@ Double price;
     }
 
     public void setPrice(Double price) {
+        price = 0.0;
     }
 }
